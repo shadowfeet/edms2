@@ -1,0 +1,100 @@
+@charset "utf-8";
+/********************
+ * page-wide style
+ ********************/
+ul,h1 { padding:0; margin:0; }
+ul { list-style-type:none; }
+.clearfloat { clear:both; }
+a { text-decoration:none; }
+body { font-family:"Times New Roman", Times, serif; font-size:1em; 
+	   /*background-image: url(../images/words2.jpg);*/ }
+
+/*********************************
+ * For Specific HTML Element     *
+ *********************************/
+/*page wrapper*/
+#wrapper { width:1000px; margin-right:auto; margin-left:auto; }
+/*banner*/
+#black { background-color: gray;float: left; border-radius: 10px;padding: 5px; margin-bottom: 10px;}
+header { width:1000px; height:70px; }
+header h1 { display:none; }
+header img { margin:0; padding:0; border-radius:10px 10px 0 0; }
+/*navigation*/
+#mainnav { float:left; width:100%;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cc0000+0,cc0000+100;Red+Flat */
+			background: #cc0000; /* Old browsers */
+			background: -moz-linear-gradient(top, #cc0000 0%, #cc0000 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, #cc0000 0%,#cc0000 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, #cc0000 0%,#cc0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#cc0000',GradientType=0 ); /* IE6-9 */ 
+		   padding-bottom:2px;
+		   padding-top:2px; }
+#mainnav > ul { float:left; }
+#mainnav > ul li { float:left; margin-left:2px; }
+#mainnav > ul li a { font-size:.7em; width: 10em; display: block;
+				     padding:5px 0 5px 5px; border:1px solid #a7a7ad;
+				     color:white; text-align: center; font-family:"Ravie";
+					 border-radius:1px; }
+#mainnav > ul li a.current, #mainnav > ul li a:hover { 
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e40000+0,e40000+100 */
+background: #e40000; /* Old browsers */
+background: -moz-linear-gradient(top, #e40000 0%, #e40000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #e40000 0%,#e40000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #e40000 0%,#e40000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e40000', endColorstr='#e40000',GradientType=0 ); /* IE6-9 */ }
+/*the website portal tool*/
+#portal { position:relative; float:right; margin-right:5px; }
+#portal p { margin:0; padding:0; display:block; margin-top:6px; 
+			float:left; color:white; }
+#portlink { display:block; float:left; width:16px; height:16px; margin-right:5px;
+	        background-image:url(../images/user.png); background-repeat: no-repeat; }
+#portlink:hover { background-image:url(../images/user2.gif); }
+#portaldiv { padding:3px; float:left; position:absolute; top:30px;
+		     left:0; background:orange; display:none; border-radius:3px; }
+#portal_menu { float:left; background-color: white; }
+#portal_menu li a { color:black; font-weight:bold; display:block;
+				    font-family:Verdana, Arial, Helvetica, sans-serif;
+					font-size:12px; padding:4px 8px 4px 8px; }
+#portal_menu li:first-child { border-bottom: 1px solid orange; }
+#portal_menu li a:hover { background:#E5E5E5; font-weight:bold; }
+#div_loginform { display:none; position:absolute; padding:3px; 
+	  			 background-color:orange; border-radius:3px; top:40px; right:-2px; }
+#loginform { 
+	font-size:.65em; 
+	border-radius:5px; 
+	padding-bottom:10px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	background-color:white;
+}
+#loginform #title { float:none; text-align:center; padding-top:10px;
+					font-weight:bold; color:#002000; padding-bottom:2px; }
+#loginform img { margin-left:74px; }
+#loginform input[name='username'],#loginform input[name='password'] {
+	background-color: #FBEF99; font-family: "Times New Roman", Times, serif; 
+	font-size: 1.5em; width: 180px; margin:0 5px 2px 5px; }
+#loginform input[name='login'] { width: 186px; margin-left:4px; }
+#loginform div { margin-top:5px; }
+#loginform div input[name='rememberme'] { margin-left:5px; }
+#loginform div label[for='rememberme'] { padding-top:4px; color:#002000; font-size:10px; }
+#forgotpassword { margin-left:15px; font-size:10px; text-decoration:underline; }
+#lf_register { display:block; margin-left:55px; margin-top:10px;
+	           font-size:10px; text-decoration:underline; }
+#portaloptions { background-color:red; float:left; }
+#portaloptions a { display:block; width:9em; }
+
+/*the main content */
+main {
+	float:left;	
+	margin-top:5px;
+	background-color:white;
+	padding:3px;
+	width:994px
+}
+
+/******************
+ * the page footer
+ ******************/ 
+footer { float:left; width:100%; margin-top:5px; background-color:white;
+	     border-radius:0 0 10px 10px; }
+footer p:first-child { float:left; margin-left:15px; }
+footer p:last-child { float:right; margin-right:15px; }

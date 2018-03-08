@@ -1,0 +1,38 @@
+doctype html
+html
+ head
+  block title_block
+  
+  link(rel='stylesheet', href='/stylesheets/base.css')
+  link(rel='stylesheet', href='/stylesheets/external/jquery-ui.css')
+  block stylesheets
+
+  script(src="/javascripts/external/jquery.js")
+  script(src="/javascripts/external/jqueryui.js")
+  script(src="/socket.io/socket.io.js")
+  script(src="/javascripts/mylib.js")
+  script(src="/javascripts/navigation.js")
+  block script
+  
+  if un
+   script.
+    var username = !{JSON.stringify(un)};
+  
+ body
+  
+  div#wrapper
+  
+   div#black
+   
+    include banner
+
+    div.clearfloat
+    
+    include navigation
+    
+    div.clearfloat
+    
+    main
+     block content
+
+    include footer      

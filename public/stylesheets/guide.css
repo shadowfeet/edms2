@@ -1,0 +1,11 @@
+@charset "utf-8";
+/*Page wide element*/
+main { 
+	height: 450px;
+	background-image: url(../images/lockred512.png);
+	background-repeat:  no-repeat;
+	background-position: center center;
+}
+main p {
+	margin-left:30px;
+}

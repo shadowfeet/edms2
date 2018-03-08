@@ -1,0 +1,13 @@
+@charset "utf-8";
+/*Page wide element*/
+main { 
+	height: 450px;
+	
+}
+#activateForm{
+	margin-left:360px; 
+	margin-top: 120px
+}
+#activateForm input{
+	margin-left:5px;
+}

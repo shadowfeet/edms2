@@ -1,0 +1,54 @@
+div#mainnav
+ ul
+  if title == 'Home'
+   li: a(class='current', id='ahome', href='/') Home Page
+  else
+   li: a(id='ahome', href='/') Home Page
+
+  if title == 'Task'  
+   li: a(class='current',id='atask', href='/task') Task Section
+  else
+   li: a(id='atask', href='/task') Task Section
+  
+  if title =='Guide'
+   li: a(class='current', id='aguide', href='/guide') Guide Section
+  else 
+   li: a(id='aguide', href='/guide') Guide Section
+
+  if title =='Contact'
+   li: a(class='current', id='acontact', href='/contact') Contact Us
+  else
+   li: a(id='acontact', href='/contact') Contact Us
+
+ div#portal
+  p: a#portlink(href='images/user.png') 
+  if un
+   p#greeter Welcome back!
+  else
+   p#greeter Welcome, Visitor!
+
+  div#portaldiv
+   ul#portal_menu
+    if un
+     li: a(href='#', id='signout') Sign out
+    else
+     li: a(href='#', id='signin') Sign in
+
+    li: a(href='#', id='settings') Settings 
+
+  div#div_loginform
+   form(id='loginform', action='#' method="post")
+    p#title Sign in with your FS Account
+    img(src='images/icon5.jpg')
+    input(type='text', name='username')
+    br
+    input(type='password', name='password')
+    br
+    input(type='submit', name='login', value='Log-in')
+    div 
+     input(type='checkbox', name='rememberme', value='1')
+     label(for='rememberme') Stay signed in
+     br
+     a(id='forgotpassword', href='#') Need Help?
+     br
+     a(id='lf_register', href='signup') Register Now 

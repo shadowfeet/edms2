@@ -1,0 +1,23 @@
+extends layout
+
+block title_block
+ title Admin Page
+
+block stylesheets
+ link(rel='stylesheet', href='/stylesheets/base.css')
+ link(rel='stylesheet', href='/stylesheets/admin.css')
+ script(src="/javascripts/external/jquery.js")
+ script(src="/javascripts/external/jqueryui.js")
+ script(src="/javascripts/mylib.js")
+ script(src="/javascripts/home.js")
+ script(src="/javascripts/admin.js")
+ 
+block content
+ form(id ='activateForm', action='#' method='post')
+  p Choose what account to activate 
+  select 
+   -for(var i=0; i < users.length;i++) {
+   -var name = users[i].username; 
+    option(value="#{name}") #{name}
+   -}
+  input(type="submit",value="Activate")

@@ -1,0 +1,73 @@
+@charset "utf-8";
+/*Page wide element*/
+
+#reg_win {
+	border-radius: 3px;
+	float:left;
+	margin: 50px 0 50px 340px;
+	padding:5px;
+	background-color: #b2a1a1;
+}
+#confirmation {
+	margin-left:10px;
+	height: 281px;
+	font-weight: bold;
+}
+#asu {
+	margin:10px 0 0 0;
+}
+#reg_win form {
+	float:left;
+	background-color: white;
+	padding:0px 15px 10px 15px;
+	width: 260px;
+}
+#reg_win #d1 {
+	margin:10px 0 10px 0;
+}
+form p{
+	float:left;
+	margin-bottom: 0;
+}
+form .helpimage {
+	float:left;
+	margin-top:18px;
+	margin-left:4px;
+	display:none;
+	width: 16px;
+	height: 16px;
+}	
+form p.label{
+	width: 80px;
+}
+#reg_win form p.helptext, #reg_win form p.error {
+	margin:2px 0 0 80px;
+	padding:0;
+	display:block;
+	max-width:  150px;
+	font-size: .85em ;
+}
+p.helptext {
+	color:#b2a1a1;
+}
+p.error {
+	color:red;
+}
+
+input {
+	background-color: #FBEF99;
+	width:150px;
+}
+div#links {
+	margin-left:25px;
+	margin-top: 50px;  
+}
+div#links p:last-child {
+	margin-left:8px;
+}
+a.ui-button {
+	font-size: 12px;
+}
+body .ui-tooltip{
+	font-size: 12px;
+}

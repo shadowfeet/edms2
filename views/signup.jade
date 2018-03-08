@@ -1,0 +1,45 @@
+doctype html
+html
+
+ head
+
+  title FS Account Signup
+  link(rel='stylesheet', href='/stylesheets/base.css')
+  link(rel='stylesheet', href='/stylesheets/signup.css')
+  link(rel='stylesheet', href='/stylesheets/external/jquery-ui.css')
+  script(src="/javascripts/external/jquery.js")
+  script(src="/javascripts/external/jqueryui.js")
+  script(src="/javascripts/mylib.js")
+  script(src="/javascripts/signup.js")
+
+body
+ 
+ div#wrapper
+  
+  include banner
+  
+  main
+  
+   div#reg_win
+    form(id ='signupForm', action='#' method='post')
+     h2#asu Account Sign Up
+     p#d1 Please fill up the form below.
+     div.clearfloat
+     p.label Username
+     p: input(type='Text', name='username', maxlength='30')
+     img.helpimage(src='')
+     div.clearfloat
+     p.helptext *User letters and numbers only, e.q: missuni2016
+     div.clearfloat
+     p.label E-mail
+     p: input(type='Text', name='email', maxlength='60')
+     img.helpimage(src='')
+     div.clearfloat
+     p.helptext *Use an active email, e.q: fsphil@gmail.com.ph
+     div#links
+      p: a(href='#', id='register', title='Click to complete signup') Register 
+      p: a(href='#', id='a_cancel', title='Click to discontinue signup') Cancel  
+  
+  div.clearfloat
+  
+  include footer

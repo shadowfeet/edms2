@@ -1,0 +1,26 @@
+What information does the customer need to input
+
+document file
+billing edit level
+
+
+
+
+
+
+what information is provided by the system
+
+task_ID
+task_status
+assignee
+document type
+document server_copy_name 
+document server_final_name
+
+schedule
+     creation date
+	 
+billing 
+     edit level
+	 
+	 

@@ -1,0 +1,69 @@
+extends layout
+
+block title_block
+ title Home Page
+
+block stylesheets
+ link(rel='stylesheet', href='/stylesheets/index.css')
+block script
+ script(src="/javascripts/home.js")
+ 
+
+block content
+  div#left
+   article#intro
+    h2 What FS does
+    p 
+     | Our editing and copywriting service brings a fresh, objective pair of eyes to help create the best
+     | outcome for your business, academic and personal documents. Whether you feel unsure about your writing
+     | or want to make sure that your final draft is positively perfect, FS professional online editors 
+     | are here to help! We offer services 24 hours a day, 7 days a week, to thousands of happy clients
+     | around the globe.
+    p
+     | Our customers choose us because we deliver fast, we charge the lowest, and we strive to keep files
+     | as safe as possible. Our editors work for us because: we provide the right tools, we pay generously
+     | and our system is always secure and fail proof.
+    p 
+     | Become one of our first three(3) clients to avail our one-time promo. Editing will be free for 
+     | editing tasks not exceeding 7 pages or below 2200 words.
+    p Getting your editing and copywriting tasks done is as easy as best describe below:
+    img(src='images/3steps.jpg')
+   div#servicesnav
+    ul
+     li: a(href='#') Introduction
+     li: a(href='#') What we do
+     li: a(href='#') Credentials
+     li: a(href='#') Our works
+  aside
+   section(id='notices', class='util')
+    p.w_name Notification
+    p#pn Be it for personal or business purpose, we are here to help. 
+     a(href='/signup') Register 
+     | to work with us.
+   section(id='calc', class='util')
+    p.w_name Instant Quote
+    form(id='calc', action='#')
+     label(id='lty', class='t_l') Type of task
+     select(name='task_type', id='sty', class='right')
+      option(value='') -Select Type-
+      option(value='Editing') Editing
+      option(value='Writing') Writing 
+     div.cl
+     div#del
+      label(for='edit_level', class='t_l') Edit Level
+      select(name='edit_level', id='ec', class='right')
+       option(value='') -select level-
+       option(value='Low') Low (proofreading) 
+       option(value='Medium') Medium 
+       option(value='Heavy') Heavy 
+      div.cl
+     label(for='num_pages', id='lp', class='t_l') Pages
+     input(type='number', name='num_pages', id='inp', class='right', min='1', max='900', maxlength='3', disabled)
+     div.cl
+     label(for='cost_estimate', id='lce', class='t_l') Cost
+     input(type='text', name='cost_estimate', id='itc', class='right', disabled='disabled', maxlength='8')
+     div.cl
+     input(type='submit', name='appraise', id='sua', value='Appraise Cost') 
+   section#sponsors.util
+    p This site supports Paypal for money transfers.
+    img(src='images/paypal.png') 

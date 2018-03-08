@@ -1,0 +1,65 @@
+{
+account_id: 1,
+username:'fsenglish',
+password:null,
+email:'fsenglish@yahoo.com.ph',
+status:'active',
+date_of_activation:'2016,22,01 12:00',
+type:'admin',
+login_status:false,
+
+personal: 
+  { firsname:'Rowel',
+    middlename:'Gomez',
+    surname:'Abao',
+    date_of_birth:'1981,29,7',
+    country:'Philippines',
+  },
+
+tasks:
+  [{
+   task_status:'for completion',
+   task_owner:'argie2981',
+   preffered_editor: 'fsenglish',
+   	
+   
+   document: {
+	      type:'Thesis',
+	      original:'thesis.docx',
+	      servername:'argie2981thesis.docx',
+	      completedname:'argie2981thesiscomplete.docx'
+	     },
+   schedule: {
+	      creation: date,
+	      submission: date,
+	      approval: date,
+	      payment: date,
+	      completion: date,
+	      desire_completion: date,
+	      closing: date
+             },
+   billing: {
+	     edit_level:'High',
+	     pages:123,
+             cost:1500,
+	     discount:10,
+             agent:'paypal'
+	     payment: date,
+             payment_id: id,
+	    }
+  messages: [{
+              time: datetime,
+              message: 'hi',
+              sender:'argie2981'
+            }],
+    
+  }],
+
+invoices:
+  [{  }]
+
+  
+  
+    
+    
+    

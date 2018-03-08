@@ -1,0 +1,66 @@
+{
+	account_id: 1,
+	username:'philargie',
+	password:'july2981',
+	email:'phclient@gmai.ph',
+	status:'active',
+	date_of_activation:null,
+	type:'client',
+	login_status:'online',
+	personal: 
+		{
+			firsname:'Jerameel', 
+			middlename:'Mapalad', 
+			surname:'Bamba', 
+			date_of_birth:'1981,29,7', 
+			country:'Philippines'
+		},
+	tasks:
+		[{
+		    ID:'TASK18D',
+			status:'for submission',
+			assignee:'phclient',
+			document: 
+				{
+					type:'Thesis', 
+					originalname:'thesis.docx', 
+					servername:'phclientthesis10001', 
+					completedname:'cphclientthesis10001' 
+				},
+			timetable: 
+				{
+					creation: '2016,29,01', 
+					submission: null, 
+					approval: null, 
+					payment: null, 
+					completion: null, 
+					desire_completion: '2016,05,02',
+					closing: null
+				},
+			billing: 
+				{
+					edit_level:'High',
+					pages:123, 
+					cost:1500, 
+					discount:null, 
+					agent:null, 
+					pay_date:null, 
+					payment_referenceno:null
+					y
+				},
+			messages: 
+				[{
+					time: '2016,22,01 6:00 AM',
+					message: 'hi', 
+					sender:'argie2981'
+				}]
+		}],
+		
+	invoices: 
+		[{
+			title: 'Welcome', 
+			date:'2016,22,01', 
+			action:'unread', 
+			contents:'Welcome new user'
+		}]
+}  

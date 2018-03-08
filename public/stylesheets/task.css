@@ -1,0 +1,187 @@
+@charset "utf-8";
+/*Page wide element*/
+.clearfloat{
+	clear:both;
+}
+body a {
+	color: black;
+}
+main { 
+	
+}
+#gui {
+	margin:10px;
+}
+#gui #tab_menu li {
+	float:left;
+	margin-right: 1px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: .8em;
+}
+#gui #tab_menu li a {
+	position:relative;
+	z-index: 100;
+	border:1px solid gray;
+	padding:5px 7px 5px 7px;
+	border-radius: 5px 5px 0 0;
+	background-color: rgb(238,238,238);
+}
+#gui #tab_menu li a.tab_current{
+	background-color:white;
+	border-bottom: 1px solid white;
+
+}
+#gui #tab_menu li .tab_current:hover{
+	background-color:white;
+}
+#gui #tab_menu li a:hover {
+	background-color: rgb(228,228,228);
+
+} 
+
+#gui .panel {
+	position: relative;
+	z-index: 10;
+	float:left;
+	border: 1px solid gray;
+	border-radius: 0 4px 4px 4px;
+	margin-top: 5px;
+}
+#panel_AccountSettings, #panel_Invoices {
+	display:none;
+}
+#tasks_div{
+	float:left;
+	margin: 10px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: .8em;
+
+   
+}
+#main_window{
+	float:left;
+	border:1px solid gray;
+	border-radius: 5px 5px 0 0;
+}
+#taskmenu_div .taskmenu_title {
+   display:block;
+   margin:0;padding:0;
+   padding:3px;
+   border-bottom: 1px solid gray;	
+   text-align: center;
+   font-family:"Times New Roman", Times, serif;
+
+}
+#taskmenu_div {
+	float:left;
+    border-right:1px solid gray;
+}
+#taskmenu_div ul{
+	padding:3px 0 3px 0;
+	border-bottom: 1px solid gray;
+}
+#taskmenu_div ul li {
+   padding: 0 7px 0 7px;
+   
+}
+#taskmenu_div ul li a {
+   display:block;
+}
+#taskmenu_div ul li a:hover {
+   text-decoration: underline;
+}
+#create_task{
+	margin: 3px;
+	font-size: .7em;
+	border-radius: 0 0 0 0;
+}
+
+/*table container*/
+#table_container {
+	float:left;
+	overflow:auto;
+}
+#table_container table {
+	border-spacing:0;
+}
+
+#table_container table caption {
+	border-radius:0 5px 0 0;
+	padding:3px 0 3px 0;
+	font-family:"Times New Roman", Times, serif;
+}
+#table_container table tr:first-child{
+	color:blue;
+}
+
+#table_container table tr td {
+	padding:2px;
+	border-top:1px solid #E4E4E4;
+	border-right:1px solid #E4E4E4;
+	text-align:center;
+}
+
+#table_container table tr td.first{
+	width:150px;
+}
+#table_container table tr td.second{
+	width:150px;
+}
+#table_container table tr td.third{
+	width:300px;
+}
+
+#table_container table tr:first-child td {
+	border-top:1px solid gray;
+	text-align:center;
+}
+#table_container table tr td:last-child {
+	border-right:none;
+}
+#table_container table tr:last-child td{
+	border-bottom:1px solid #E4E4E4;
+}
+#table_container table tr.current {
+	background-color:#D9F7F9;
+
+}
+
+/*subwin*/
+#subwin {
+  float:left;
+  margin-top:5px;
+
+}
+#subwin #p_operation {
+	text-align: center;
+	margin:0; padding: 0;
+}
+#subwin #tasktool1 li {
+	float:right;
+    margin-right:10px;
+}
+#subwin #tasktool1 li a {
+	display:block;
+}
+#infodiv {
+	float:left;
+	border:1px solid gray;
+	width: 698px;
+}
+#infodiv #p_div {
+	float:left;
+	border-right: 1px solid gray;
+	padding:5px;
+}
+#infodiv #p_div p {
+  display:block;
+  margin:0;padding:0;
+  margin-top:-3px;
+
+}
+#infodiv #p_div #data {
+  margin-top:2px;
+
+}
+
+

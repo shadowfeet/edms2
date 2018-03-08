@@ -1,0 +1,126 @@
+@charset 'utf-8';
+
+#left {
+	float:left;
+	width:678px;
+	padding-left:5px;
+	padding-right:5px;
+	border:1px solid #D6D6D6;
+}
+#left > img {
+	margin-left:80px;
+}
+#intro p {
+   text-indent:15px;
+   text-align:justify;
+   }
+#servicesnav{
+	float:left;
+	margin:50px 0 5px 0;
+	width:100%;
+}
+#servicesnav ul{
+	float:right;
+}
+#servicesnav > a {
+	float:left;
+	width: 6em;
+	display: block;
+	border: 1px solid red;
+	padding: 1px;
+	margin-right: 3px;
+	background-color: #EAEAEA;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+#servicesnav ul li {
+	display:inline;
+	padding:0 5px 0 5px;
+	}
+#servicesnav ul li:last-child {
+	border-right:none;
+}
+#servicesnav ul li {
+	border-right:3px solid black;
+}
+#servicesnav ul li a {
+	color:black;
+}
+/************************************************
+ * the bar located at the right side of the page
+ ************************************************/
+aside {
+	float:right;
+	width:300px;
+}
+aside p {
+	margin:0;
+	padding:0;
+}
+section.util {
+	border:1px solid #CCC;
+}
+aside section {
+	background-color:#F5F5F5;
+}
+section.util p.w_name{
+	font-size:18px;
+	font-weight:bold;
+	border-bottom:1px solid #CCC;
+	text-align:center;
+	background-color:#D7D7D7;
+}
+/*Notification window*/	
+#pn {
+	text-indent:10px;
+	margin:5px 0 5px 5px;
+}
+
+
+/*the task cost estimate calculator*/
+#calc {
+	margin-top:10px;
+}
+#calc .cl {
+	clear:both;
+}
+.t_l {
+	display:block;
+	float:left;
+	width:8em;
+	margin-right:5px;
+	font-size:.9em;
+	text-align:right;
+	padding-top:2px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.right {
+	margin-bottom:2px;
+}
+#sua {
+	margin:5px 0 5px 9em ; 
+}
+#del,#dca {
+	display:none;
+}
+#inp {
+	width:3em;
+}
+#itc {
+	width:5em;
+}
+
+/**/
+#sponsors {
+	margin-top:5px;
+	padding: 20px 5px 10px 15px;
+}
+#sponsors p {
+   text-indent:25px;
+}
+#sponsors img {
+	margin-left:90px;
+	margin-top:10px;
+	
+}

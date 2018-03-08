@@ -1,0 +1,10 @@
+register
+ 1. check database for record
+ 
+ 2. if none exists
+    tell script to proceed adding user
+3. create admin page for account activation
+
+
+
+how to send request to a node server script
